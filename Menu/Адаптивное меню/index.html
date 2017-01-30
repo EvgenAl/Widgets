@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+		body {
+			background-color: #F8ECC2;
+			font-family: Arial, sans-serif;
+		}
+		nav {
+			width: 100%;
+			background-color:#65A8A6;
+			overflow: hidden;
+		}
+		nav ul{
+			float: right;
+			margin: 0;
+		}
+		nav ul li {
+			display:inline-block;  
+		}
+		nav a {
+			color:#F8ECC2;
+			display:block;
+			text-decoration: none;
+			padding:27px 30px;
+			transition:all .6s ease-out;
+		}
+		nav a:hover {
+			background: #E65540;
+			color:#000;
+		}
+		.head{
+			overflow: hidden;
+			float:left;
+		}
+
+		.logo{
+			float: left;
+			
+		}
+		.logo a{
+			padding: 25px 30px 15px 30px;
+		}
+		.logo a:hover{
+			background: transparent;
+		}
+		.btn{
+			width: 50px;
+			height: 50px;
+			border:2px solid #000;
+			border-radius: 5px;
+			margin-top: 10px;
+			margin-right: 20px;
+			display: none;
+			cursor:pointer;
+		}
+		@media(max-width:750px) {
+			.btn {
+				display:block;
+				float:right;
+			}
+			nav ul li {
+				float:none;
+				display:block;
+				border-bottom:1px #79896D solid;
+				text-align: center;   
+			}
+			nav ul {
+				float:none;
+				padding-left: 0;
+				margin-bottom: 0;
+				display: none;
+			}
+			.head{
+				float:none;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="head">
+			<div class="logo"><a href="#"><img src="img/Logo-Treehouse.png" alt="logo"></a></div>
+			<button class="btn"></button>
+		</div>
+		<ul>
+			<li><a href="#">link1</a></li>
+			<li><a href="#">link2</a></li>
+			<li><a href="#">link3</a></li>
+			<li><a href="#">link4</a></li>
+			<li><a href="#">link5</a></li>
+		</ul>
+	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>

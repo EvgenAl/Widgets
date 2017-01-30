@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	nav{
+		margin: 30px;
+	}
+	nav li{
+	list-style-type: none;
+	float:left;
+	width: 140px;
+	}
+
+	nav a{
+		text-decoration: none;
+		font-size:14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color:#fff;
+		background: #444;
+		text-align: center;
+		display: block;
+		padding: 15px;
+		margin: 3px;		
+		border-radius: 5px;
+		transition:all .5s ease-out;
+	}
+	nav a:hover{
+		background: #ccc;
+		color:#444;
+	}
+	.insert{
+		display: none;
+		
+	}
+	</style>
+</head>
+<body>
+	<nav class='nav'>
+		<!--Меню-->
+		<li><a href="#">link1</a>
+			<!--Подменю-->
+			<ul class='insert'>
+				<li><a href="#">link1</a></li>
+				<li><a href="#">link2</a></li>
+				<li><a href="#">link3</a></li>
+				<li><a href="#">link4</a></li>
+				<li><a href="#">link5</a></li>
+			</ul>
+		</li>
+		<li><a href="#">link2</a></li>
+		<li><a href="#">link3</a></li>
+		<li><a href="#">link4</a></li>
+		<li><a href="#">link5</a>
+			<!--Подменю-->
+			<ul class='insert'>
+				<li><a href="#">link1</a></li>
+				<li><a href="#">link2</a></li>
+				<li><a href="#">link3</a></li>
+				<li><a href="#">link4</a></li>
+				<li><a href="#">link5</a></li>
+			</ul>
+		</li>
+	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+	.wrapper{
+		position: relative;
+	}
+		body{
+			height: 100vh;
+			padding: 0;
+			margin: 0;
+		}
+		nav{
+			background: #eee;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		nav li{
+			list-style: none;
+			display: inline-block;
+		}
+		a{
+			color:#000;
+			font-family: Arial,sans-serif;
+			font-size: 25px;
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 15px 25px;
+			transition:color .5s ease-out;
+		}
+		a:hover{
+			color:red;
+		}
+		.btn{
+			background: #cecece;
+			border-radius: 5px;
+			float:left;
+			margin: 12px;
+		}
+		.sidebar ul{
+			display: inline-block;
+			width: 200px;
+			background: #f5f5f5;
+			z-index:999;
+		}
+		.sidebar ul li{
+			list-style: none;
+			border-bottom: 2px solid #ccc; 
+		}
+		.sidebar{
+			position: absolute;
+			top:0;
+			left:-200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<nav>
+			<ul>
+				<li class='btn'><a href="#"></a></li>
+				<li><a href="#">link1</a></li>
+				<li><a href="#">link2</a></li>
+				<li><a href="#">link3</a></li>
+				<li><a href="#">link4</a></li>
+				<li><a href="#">link5</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="wrapper">
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iure expedita obcaecati inventore repellat, rem, blanditiis quam corporis quo animi alias! Sit atque officiis quasi odio ipsam blanditiis delectus maiores dolor provident harum voluptates vel, doloribus quo modi corrupti totam dolore nam dolores nesciunt. Tempora cumque sint blanditiis fugiat adipisci, sequi officiis sapiente quia rem. Veritatis hic animi repellat error facere placeat necessitatibus, saepe unde deleniti, voluptatibus pariatur fuga odio omnis praesentium. Reiciendis earum nemo magnam, eos eius accusamus quos tenetur sit, dolorum sapiente quis minima temporibus labore explicabo, veritatis aut? Reprehenderit a nostrum vel, explicabo libero ea, porro ab quasi repudiandae architecto, vitae expedita unde animi natus sint nesciunt nihil harum. Expedita quasi ad eaque nulla, dolores neque odio.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quas deleniti earum itaque, corporis aut, est quidem saepe deserunt quis amet beatae provident quos inventore mollitia ipsam reprehenderit eveniet fuga vero nemo, quia nulla! Dolores quaerat dicta optio expedita unde incidunt vel eaque nam nostrum perferendis delectus aliquid, similique doloribus modi. Laudantium fugiat et id, rem eligendi cupiditate, itaque neque praesentium mollitia accusamus! Aliquam minus dolorem incidunt a blanditiis sunt vero ea architecto omnis, corrupti eaque voluptate harum laboriosam dolores sapiente voluptatibus voluptatum possimus quibusdam numquam, facere nostrum animi. Vitae quisquam similique, dignissimos qui est perferendis soluta optio. Molestias, autem a quae doloribus id magnam sed placeat minima quaerat quis quo mollitia. Repellat facere commodi amet nesciunt suscipit! Fuga, aperiam.</p>		
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li><a href="#">link1</a></li>
+				<li><a href="#">link2</a></li>
+				<li><a href="#">link3</a></li>
+				<li><a href="#">link4</a></li>
+				<li><a href="#">link5</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>

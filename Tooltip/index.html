@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+	.wrap{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.link{
+		display: inline-block;
+		margin: 100px 0;
+	}
+		.forTooltip{
+			display: none;
+			position: absolute;
+			border:2px solid #ccc;
+			top: 0;
+			left: 0;
+			padding:10px;
+			border-radius: 8px;
+			background: #eee;
+			width: 60px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+<div class="forTooltip"></div><!--Блок для подсказки-->
+<a rel='Просто ссылка' href="#" class="hover link">link</a>
+<br>
+<br>
+<br>
+<a href="#" rel='Просто картинка'class="hover"><img src="img/Image_1.png" alt="img"></a>
+
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>

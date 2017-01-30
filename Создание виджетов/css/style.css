@@ -1,0 +1,169 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.container {
+  margin: auto;
+  width: 450px; }
+
+.section__title {
+  font-family: Tahoma;
+  font-size: 30px;
+  padding: 20px;
+  border-bottom: 1px solid #bdc3c7;
+  margin-bottom: 20px; }
+
+.section {
+  margin-bottom: 20px; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+
+
+/* --------- tabs --------- */
+
+
+.tabs {
+  width: 400px;
+  border: 2px dashed #34495e;
+  padding: 10px;
+  min-height: 300px; }
+
+.tabs__num {
+  font-size: 30px;
+  color: #1abc9c; }
+
+.tabs__list {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #bdc3c7; }
+
+.tabs__item {
+  display: inline-block;
+  margin-left: 20px; }
+  .tabs__item.active .tabs__link {
+    background: #e67e22;
+    color: #ecf0f1; }
+  .tabs__item:first-child {
+    margin-left: 0; }
+
+.tabs__link {
+  display: block;
+  padding: 5px 10px;
+  color: #34495e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New"; }
+
+.tabs__content-item {
+  display: none; }
+  .tabs__content-item.active {
+    display: block; }
+
+
+
+/* --------- slideshow --------- */
+
+
+.slideshow {
+  width: 400px;
+  padding: 10px;
+  border: 2px solid #34495e; }
+
+.slideshow__fullsize {
+  height: 300px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #bdc3c7;
+  margin-bottom: 20px; }
+  .slideshow__fullsize img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%; }
+
+.slideshow__thumbs {
+  text-align: center; }
+
+.slideshow__thumbs-item {
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 10px; }
+  .slideshow__thumbs-item.active {
+    border-color: #8e44ad; }
+  .slideshow__thumbs-item:first-child {
+    margin-left: 0px; }
+
+.slideshow__thumbs-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .slideshow__thumbs-link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%; }
+
+.slideshow__preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/preloader.gif) center center no-repeat;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  display: none; }
+
+.acco {
+  width: 400px; }
+
+.acco__item {
+  border-bottom: 3px solid #1abc9c;
+  margin-bottom: 10px; }
+  .acco__item:last-child {
+    border-bottom: none; }
+
+.acco__trigger {
+  text-decoration: none;
+  font-size: 20px;
+  color: #34495e;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue"; }
+
+.acco__content {
+  padding: 10px;
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 30px;
+  display: none; }
+
+.acco__content-item {
+  margin-bottom: 5px; }

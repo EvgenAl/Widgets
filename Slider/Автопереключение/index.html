@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+		.viewport{
+			max-width: 321px;
+			height: 238px;	
+			position: relative;
+			overflow:hidden;
+		}
+		.slidewrapper{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 238px;
+			margin: 0;
+			padding: 0;
+
+		}
+		.slide{
+			width: 321px;
+			height: 238px;
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			background: #ff0000;
+
+		}
+		.second{
+			background: #00ff00;   
+		}
+		.third{
+			background: #0000ff;   
+		}
+		.buttons {
+			text-align: center;
+		}
+		.buttons li{
+			display:inline-block;
+			margin:10px;
+			background-color: #e67e22;
+			color:#fff;
+			padding: 5px 20px;
+			border-radius:5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="viewport">
+		<ul class="slidewrapper" data-current="0">
+			<li class="slide">
+				<img src="img/Image_1.png" alt="img1">
+			</li>
+			<li class="slide second">
+				<img src="img/Image_2.png" alt="img2">
+			</li>
+			<li class="slide third">
+				<img src="img/Image_3.png" alt="img3">
+			</li>
+		</ul>
+	</div>
+	<!--
+	<ul class="buttons">
+		<li class="prev">prev</li>
+		<li class="next">next</li>
+	</ul>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='script.js'></script>
+</body>
+</html>

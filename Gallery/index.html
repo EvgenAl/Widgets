@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+		.gallery {
+			float: left;
+			width: 90px;
+			margin-right: 30px;
+			margin-left: 10px;
+			border-right: white 1px dotted;
+		}
+		.gallery img {
+			display: inline-block;
+			margin: 0 0 10px 0;
+			border: 1px solid rgb(0,0,0);
+		}
+		.photo {
+			margin-left: 150px;
+			position: relative;
+		}
+		.photo img {
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="gallery">
+			<a href="img/Portfolio-Image4.png"><img src="img/Portfolio-Image4_small.png" alt="img1"></a>
+			<a href="img/Portfolio-Image5.png"><img src="img/Portfolio-Image5_small.png" alt="img2"></a>
+			<a href="img/Portfolio-Image6.png"><img src="img/Portfolio-Image6_small.png" alt="img3"></a>
+			<a href="img/Portfolio-Image7.png"><img src="img/Portfolio-Image7_small.png" alt="img4"></a>
+		</div>
+		<div class="photo"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src='script.js'></script>
+</body>
+</html>

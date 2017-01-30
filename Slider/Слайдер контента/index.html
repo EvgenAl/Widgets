@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+		body {
+			background-color:#f0f0f0;
+		}
+		#wrapper {
+			width:960px;
+			margin-left:auto;
+			margin-right:auto;
+			overflow:visible;
+		}
+
+		#slider {
+			background-color:#3a3a3a;
+			position:relative;
+			padding:20px;
+			overflow:hidden;
+			border: 1px solid #a9a9a9;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			-khtml-border-radius: 7px;
+		}
+		.content {
+			width:920px;
+			float: left;
+			position: relative;
+			background-color:#FFF;
+		}
+		.inslider a {
+			text-decoration:none;
+		}
+		.contentholder {
+			border: 1px solid #a9a9a9;
+			height:300px;
+			width: 920px;
+			overflow: hidden;
+			position: relative;
+			background-color:#FFF;
+		}
+		.contentslider {
+			position: absolute;
+			top: 0; left: 0;
+		}
+		.imgslider img {
+			float: left;
+		}
+		.contentnav {
+			position: absolute;
+			bottom: 30px; left:30px;
+			height:30px;
+			z-index: 100;
+			text-align: center;
+			line-height: 30px;
+			border: 1px solid #000;
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+		.contentnav a {
+			padding: 5px;
+			text-decoration: none;
+			color: #333;
+		}
+		.contentnav a.active {
+			font-weight: bold;
+			color:#FFF;
+			background: #603;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="slider">
+			<div class="inslider">
+				<!-- Контейнер контента  -->
+				<div class="contentholder">
+					<div class="contentslider">
+
+						<div class="content">
+							<h1>Демонстрация проскальзывания конента всторону. Часть 1</h1>
+							<p>Просто текст для примера. Просто текст для примера. Просто текст для примера.</p>
+						</div>
+
+						<div class="content">
+							<h1>Демонстрация проскальзывания конента всторону. Часть 2</h1>
+							<p>Просто текст для примера. Просто текст для примера. Просто текст для примера.</p>
+						</div>
+
+						<div class="content">
+							<h1>Демонстрация проскальзывания конента всторону. Часть 3</h1>
+							<p>Просто текст для примера. Просто текст для примера. Просто текст для примера.</p>
+						</div>
+
+						<div class="content">
+							<h1>Демонстрация проскальзывания конента всторону. Часть 4</h1>
+							<p>Просто текст для примера. Просто текст для примера. Просто текст для примера.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Навигация  -->
+				<div class="contentnav">
+					<a rel="1" href="#">1</a>
+					<a rel="2" href="#">2</a>
+					<a rel="3" href="#">3</a>
+					<a rel="4" href="#">4</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='script.js'></script>
+</body>
+</html>
